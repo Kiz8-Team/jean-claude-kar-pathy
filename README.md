@@ -1,6 +1,6 @@
 # jean-claude-kar-pathy
 
-A Claude Code plugin that sets up and maintains an LLM-powered knowledge base for any project. Based on Andrej Karpathy's [LLM Wiki](https://github.com/karpathy/llm-wiki) pattern and his [observations on LLM-assisted coding](https://x.com/karpathy/status/1886192184808149383).
+A Claude Code plugin that sets up and maintains an LLM-powered knowledge base for any project. Based on Andrej Karpathy's [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) pattern and his [observations on LLM-assisted coding](https://x.com/karpathy/status/2015883857489522876).
 
 The core idea: instead of re-discovering project knowledge from scratch every session, the LLM **incrementally builds and maintains a persistent wiki** — a structured, interlinked collection of markdown files. Cross-references are pre-built, contradictions are flagged, session learnings compound over time. The wiki gets richer with every source you add and every session you capture.
 
@@ -157,8 +157,8 @@ Works with any Claude Code environment — CLI, desktop app, web app, IDE extens
 
 ## Credits
 
-- **LLM Wiki pattern**: [Andrej Karpathy](https://github.com/karpathy/llm-wiki)
-- **Coding conventions**: Distilled from Karpathy's [notes on LLM-assisted coding](https://x.com/karpathy/status/1886192184808149383)
+- **LLM Wiki pattern**: [Andrej Karpathy](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
+- **Coding conventions**: Distilled from Karpathy's [notes on LLM-assisted coding](https://x.com/karpathy/status/2015883857489522876)
 - **Implementation**: Built with Claude Code
 
 ## License
