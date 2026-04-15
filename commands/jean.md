@@ -1,3 +1,7 @@
+---
+description: Set up coding conventions and a compounding project wiki
+---
+
 # jean
 
 You are executing the `/jean` command. Your job is to set up this project for disciplined LLM-assisted development. Two things happen: coding conventions get injected into CLAUDE.md to counteract common LLM failure modes (wrong assumptions, overcomplication, sycophancy, drive-by edits), and a persistent wiki gets built that compounds project knowledge across sessions instead of rediscovering it from scratch every time.
