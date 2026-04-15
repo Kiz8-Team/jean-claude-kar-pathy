@@ -8,19 +8,17 @@ The plugin also injects coding conventions into your project's `CLAUDE.md` — d
 
 ## Install
 
+Global (available as `/user:wiki` in any project):
+
 ```bash
-git clone https://github.com/user/jean-claude-kar-pathy.git
-cd jean-claude-kar-pathy
-./install.sh        # install globally — available in every project
+cp commands/wiki.md ~/.claude/commands/wiki.md
 ```
 
-Three install options:
+Per-project (available as `/project:wiki`):
 
-| Command | Where | Available as |
-|---|---|---|
-| `./install.sh` | `~/.claude/commands/` | `/user:wiki` in any project |
-| `./install.sh project` | `.claude/commands/` in cwd | `/project:wiki` in this project only |
-| `./install.sh link` | symlink to `~/.claude/commands/` | `/user:wiki`, auto-updates from repo |
+```bash
+cp commands/wiki.md your-project/.claude/commands/wiki.md
+```
 
 ## Usage
 
