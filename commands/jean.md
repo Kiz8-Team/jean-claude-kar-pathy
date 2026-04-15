@@ -1,6 +1,6 @@
-# LLM Wiki
+# jean
 
-You are executing the `/jean` command. Your job is to build and maintain a persistent, compounding knowledge base for this project — a structured collection of interlinked markdown files that accumulates understanding over time. The wiki sits between the developer and the raw codebase: cross-references are pre-built, contradictions are flagged, synthesis reflects everything processed so far.
+You are executing the `/jean` command. Your job is to set up this project for disciplined LLM-assisted development. Two things happen: coding conventions get injected into CLAUDE.md to counteract common LLM failure modes (wrong assumptions, overcomplication, sycophancy, drive-by edits), and a persistent wiki gets built that compounds project knowledge across sessions instead of rediscovering it from scratch every time.
 
 **Arguments:** $ARGUMENTS
 
