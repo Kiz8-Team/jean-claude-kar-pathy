@@ -11,13 +11,13 @@ The plugin also injects coding conventions into your project's `CLAUDE.md` — d
 Global (available as `/user:wiki` in any project):
 
 ```bash
-cp commands/wiki.md ~/.claude/commands/wiki.md
+cp commands/jean.md ~/.claude/commands/jean.md
 ```
 
 Per-project (available as `/project:wiki`):
 
 ```bash
-cp commands/wiki.md your-project/.claude/commands/wiki.md
+cp commands/jean.md your-project/.claude/commands/jean.md
 ```
 
 ## Usage
@@ -25,17 +25,17 @@ cp commands/wiki.md your-project/.claude/commands/wiki.md
 One command, context-aware. It does the right thing based on whether a wiki already exists:
 
 ```
-/wiki              # init if no wiki, capture if wiki exists
-/wiki init         # set up the wiki (interactive)
-/wiki capture      # save session artifacts before clearing context
-/wiki lint         # health-check the wiki
-/wiki ingest path  # process a document into the wiki
-/wiki status       # overview of wiki state
+/jean              # init if no wiki, capture if wiki exists
+/jean init         # set up the wiki (interactive)
+/jean capture      # save session artifacts before clearing context
+/jean lint         # health-check the wiki
+/jean ingest path  # process a document into the wiki
+/jean status       # overview of wiki state
 ```
 
 ### Init — set up the wiki
 
-Run `/wiki` in any project. The plugin:
+Run `/jean` in any project. The plugin:
 
 1. **Scans your project** — reads README, manifest files, directory structure, existing docs
 2. **Asks you questions** — confirms its understanding, asks what to track, gets consent before touching anything
@@ -59,7 +59,7 @@ For empty projects, it asks what you're building and creates the scaffolding.
 
 ### Capture — save session learnings
 
-The most common repeated operation. After a coding session (ideally after pushing), run `/wiki capture` (or just `/wiki` — it defaults to capture when the wiki exists).
+The most common repeated operation. After a coding session (ideally after pushing), run `/jean capture` (or just `/jean` — it defaults to capture when the wiki exists).
 
 The plugin:
 
@@ -75,11 +75,11 @@ This is where the wiki compounds. Session knowledge that would normally vanish w
 
 ### Lint — health-check
 
-Run `/wiki lint` periodically. Checks for dead links, orphan pages, stale content that no longer matches the code, missing pages for frequently-mentioned topics, and contradictions between pages.
+Run `/jean lint` periodically. Checks for dead links, orphan pages, stale content that no longer matches the code, missing pages for frequently-mentioned topics, and contradictions between pages.
 
 ### Ingest — process a source
 
-Run `/wiki ingest path/to/document.md` to process any document into the wiki. The plugin reads it, discusses key takeaways with you, creates a source summary, and updates entity/concept pages across the wiki.
+Run `/jean ingest path/to/document.md` to process any document into the wiki. The plugin reads it, discusses key takeaways with you, creates a source summary, and updates entity/concept pages across the wiki.
 
 ## What gets injected into CLAUDE.md
 
@@ -140,12 +140,12 @@ Three layers, following the LLM Wiki pattern:
 
 ## Recommended workflow
 
-1. Install globally: `./install.sh`
-2. In your project: `/wiki` to initialize
+1. Install globally (see above)
+2. In your project: `/jean` to initialize
 3. Code as usual with Claude Code
-4. Before clearing context: `/wiki capture` to save what you learned
-5. Periodically: `/wiki lint` to keep the wiki healthy
-6. When you add docs: `/wiki ingest path/to/doc.md`
+4. Before clearing context: `/jean capture` to save what you learned
+5. Periodically: `/jean lint` to keep the wiki healthy
+6. When you add docs: `/jean ingest path/to/doc.md`
 
 The wiki is just markdown files. It works with Obsidian (graph view is great for seeing connections), it's git-friendly, and it compounds over time.
 

@@ -1,6 +1,6 @@
 # LLM Wiki
 
-You are executing the `/wiki` command. Your job is to build and maintain a persistent, compounding knowledge base for this project — a structured collection of interlinked markdown files that accumulates understanding over time. The wiki sits between the developer and the raw codebase: cross-references are pre-built, contradictions are flagged, synthesis reflects everything processed so far.
+You are executing the `/jean` command. Your job is to build and maintain a persistent, compounding knowledge base for this project — a structured collection of interlinked markdown files that accumulates understanding over time. The wiki sits between the developer and the raw codebase: cross-references are pre-built, contradictions are flagged, synthesis reflects everything processed so far.
 
 **Arguments:** $ARGUMENTS
 
