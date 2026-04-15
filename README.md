@@ -4,7 +4,7 @@ A Claude Code plugin that sets up and maintains an LLM-powered knowledge base fo
 
 The core idea: instead of re-discovering project knowledge from scratch every session, the LLM **incrementally builds and maintains a persistent wiki** — a structured, interlinked collection of markdown files. Cross-references are pre-built, contradictions are flagged, session learnings compound over time. The wiki gets richer with every source you add and every session you capture.
 
-The plugin also injects coding conventions into your project's `CLAUDE.md` — direct antidotes to common LLM failure modes (wrong assumptions, overcomplication, drive-by edits, sycophancy) drawn from real-world experience with agent-assisted development.
+The plugin also injects conventions into your project's `CLAUDE.md` — direct antidotes to common LLM failure modes (wrong assumptions, overcomplication, drive-by edits, sycophancy) drawn from real-world experience with agent-assisted development.
 
 ## Install
 
@@ -53,7 +53,7 @@ Run `/jean` in any project. The plugin:
      sources/       — documentation summaries
    ```
 4. **Processes existing documentation** — README, docs, code structure get synthesized into interlinked wiki pages. A single source might touch 5-10 pages.
-5. **Injects into CLAUDE.md** — adds coding conventions and wiki instructions so every future session is wiki-aware
+5. **Injects into CLAUDE.md** — adds conventions and wiki instructions so every future session is wiki-aware
 
 For empty projects, it asks what you're building and creates the scaffolding.
 
@@ -83,27 +83,27 @@ Run `/jean ingest path/to/document.md` to process any document into the wiki. Th
 
 ## What gets injected into CLAUDE.md
 
-Two sections. Coding conventions first, wiki instructions second:
+Two sections. Conventions first, wiki instructions second:
 
 ```markdown
-## Coding Conventions
+## Conventions
 
-- Verify assumptions before acting. If something is unclear about the
-  codebase, read the code or ask — don't guess and run with it.
+- Verify assumptions before acting. If something is unclear, check the
+  source or ask — don't guess and run with it.
 - Surface confusion. If requirements are inconsistent or ambiguous, say so
   rather than silently picking an interpretation.
 - Present tradeoffs. When multiple approaches exist, lay out the options
   before committing to one.
-- Push back when appropriate. If a request would lead to worse code, say so
-  with reasoning.
-- Prefer the simplest solution. If you're writing 500+ lines, stop and ask
-  whether there's a 50-line approach.
-- Clean up after yourself. Remove dead code, unused imports, and obsolete
-  comments introduced by your changes.
-- Don't touch what you weren't asked to touch. No drive-by refactors, no
-  removing comments you find unnecessary, no changes orthogonal to the task.
-- Write tests first when the task is well-defined. Define success criteria,
-  make them verifiable, then implement.
+- Push back when appropriate. If a request would lead to worse results,
+  say so with reasoning.
+- Prefer the simplest approach. If the solution is growing complex, stop
+  and ask whether there's a simpler way.
+- Clean up after yourself. Remove obsolete artifacts introduced by your
+  changes.
+- Don't touch what you weren't asked to touch. No unsolicited changes to
+  things orthogonal to the task.
+- Define success criteria first when the task is well-defined. Make them
+  verifiable, then execute.
 
 ## Wiki
 
@@ -118,7 +118,7 @@ This project has an LLM-maintained knowledge base at `.wiki/`.
 - Use [[wikilinks]] for cross-references between wiki pages
 ```
 
-The coding conventions are direct antidotes to the most common LLM agent failure modes: making assumptions without checking, overcomplicated solutions, silent interpretation of ambiguity, drive-by changes to unrelated code, and sycophantic agreement instead of pushback.
+The conventions are direct antidotes to the most common LLM agent failure modes: making assumptions without checking, overcomplicated solutions, silent interpretation of ambiguity, unsolicited changes, and sycophantic agreement instead of pushback.
 
 ## Safety
 

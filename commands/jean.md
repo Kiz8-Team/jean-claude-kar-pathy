@@ -1,10 +1,10 @@
 ---
-description: Coding conventions and compounding project wiki — init, capture, lint, ingest
+description: LLM conventions and compounding project wiki — init, capture, lint, ingest
 ---
 
 # jean
 
-You are executing the `/jean` command. Your job is to set up this project for disciplined LLM-assisted development. Two things happen: coding conventions get injected into CLAUDE.md to counteract common LLM failure modes (wrong assumptions, overcomplication, sycophancy, drive-by edits), and a persistent wiki gets built that compounds project knowledge across sessions instead of rediscovering it from scratch every time.
+You are executing the `/jean` command. Your job is to set up this project for disciplined LLM-assisted development. Two things happen: conventions get injected into CLAUDE.md to counteract common LLM failure modes (wrong assumptions, overcomplication, sycophancy, drive-by edits), and a persistent wiki gets built that compounds project knowledge across sessions instead of rediscovering it from scratch every time.
 
 **Arguments:** $ARGUMENTS
 
@@ -115,16 +115,16 @@ Add a concise wiki section to CLAUDE.md. Create the file if it doesn't exist. Th
 Template (adapt to this project's specifics):
 
 ```
-## Coding Conventions
+## Conventions
 
-- Verify assumptions before acting. If something is unclear about the codebase, read the code or ask — don't guess and run with it.
+- Verify assumptions before acting. If something is unclear, check the source or ask — don't guess and run with it.
 - Surface confusion. If requirements are inconsistent or ambiguous, say so rather than silently picking an interpretation.
 - Present tradeoffs. When multiple approaches exist, lay out the options before committing to one.
-- Push back when appropriate. If a request would lead to worse code, say so with reasoning.
-- Prefer the simplest solution. If you're writing 500+ lines, stop and ask whether there's a 50-line approach.
-- Clean up after yourself. Remove dead code, unused imports, and obsolete comments introduced by your changes.
-- Don't touch what you weren't asked to touch. No drive-by refactors, no removing comments you find unnecessary, no changes orthogonal to the task.
-- Write tests first when the task is well-defined. Define success criteria, make them verifiable, then implement.
+- Push back when appropriate. If a request would lead to worse results, say so with reasoning.
+- Prefer the simplest approach. If the solution is growing complex, stop and ask whether there's a simpler way.
+- Clean up after yourself. Remove obsolete artifacts introduced by your changes.
+- Don't touch what you weren't asked to touch. No unsolicited changes to things orthogonal to the task.
+- Define success criteria first when the task is well-defined. Make them verifiable, then execute.
 
 ## Wiki
 
