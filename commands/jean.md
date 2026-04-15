@@ -1,5 +1,5 @@
 ---
-description: Set up coding conventions and a compounding project wiki
+description: Coding conventions and compounding project wiki — init, capture, lint, ingest
 ---
 
 # jean
