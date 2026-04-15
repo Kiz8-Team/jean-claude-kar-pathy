@@ -8,13 +8,13 @@ The plugin also injects coding conventions into your project's `CLAUDE.md` — d
 
 ## Install
 
-Global (available as `/user:wiki` in any project):
+Global (available in any project):
 
 ```bash
 cp commands/jean.md ~/.claude/commands/jean.md
 ```
 
-Per-project (available as `/project:wiki`):
+Per-project only:
 
 ```bash
 cp commands/jean.md your-project/.claude/commands/jean.md
